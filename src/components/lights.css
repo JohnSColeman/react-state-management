@@ -1,0 +1,31 @@
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
+    opacity: 0.3; /* Initial opacity for inactive lights */
+}
+
+.red {
+    background-color: #ff6347; /* Red */
+}
+
+.yellow {
+    background-color: #ffd700; /* Yellow */
+}
+
+.green {
+    background-color: #32cd32; /* Green */
+}
+
+.light.active {
+    opacity: 1; /* Make active light fully opaque */
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
